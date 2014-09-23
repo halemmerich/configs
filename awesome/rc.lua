@@ -231,10 +231,10 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "m", function () mymainmenu:show() end),
 
     -- Layout manipulation
-    awful.key({ modkey, "Shift"   }, "s", function () awful.client.swap.byidx(  1)    end),
-    awful.key({ modkey, "Shift"   }, "a", function () awful.client.swap.byidx( -1)    end),
-    awful.key({ modkey, "Control" }, "s", function () awful.screen.focus_relative( 1) end),
-    awful.key({ modkey, "Control" }, "a", function () awful.screen.focus_relative(-1) end),
+    awful.key({ modkey, "Shift"   }, "w", function () awful.client.swap.byidx(  1)    end),
+    awful.key({ modkey, "Shift"   }, "q", function () awful.client.swap.byidx( -1)    end),
+    awful.key({ modkey, "Control" }, "w", function () awful.screen.focus_relative( 1) end),
+    awful.key({ modkey, "Control" }, "q", function () awful.screen.focus_relative(-1) end),
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto),
     awful.key({ modkey,           }, "Tab",
         function ()
@@ -247,7 +247,7 @@ globalkeys = awful.util.table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
-    awful.key({ modkey, "Shift"   }, "q", awesome.quit),
+    awful.key({ modkey, "Shift"   }, "End", awesome.quit),
 
     awful.key({ modkey,           }, "s",     function () awful.tag.incmwfact( 0.05)    end),
     awful.key({ modkey,           }, "a",     function () awful.tag.incmwfact(-0.05)    end),
@@ -263,7 +263,7 @@ globalkeys = awful.util.table.join(
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
 
-    awful.key({ modkey }, "x",
+    awful.key({ modkey }, "l",
               function ()
                   awful.prompt.run({ prompt = "Run Lua code: " },
                   mypromptbox[mouse.screen].widget,
