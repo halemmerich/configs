@@ -1,0 +1,7 @@
+[roxterm profile]
+colour_scheme=Default
+visible_bell=1
+disable_menu_access=1
+disable_menu_shortcuts=1
+disable_tab_menu_shortcuts=1
+always_show_tabs=0
